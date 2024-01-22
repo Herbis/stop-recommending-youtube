@@ -1,0 +1,15 @@
+#content {
+    --ytd-persistent-guide-width: 0 !important;
+}
+
+#guide {
+    display: none !important;
+}
+
+ytd-rich-section-renderer {
+    display: none !important;
+}
+
+.ytd-shorts.navigation-container {
+    display: none !important;
+}

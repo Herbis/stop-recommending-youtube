@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Stop recommending YouTube",
+    "version": "1.0",
+    "description": "Stops recommended content from showing up on YouTube.",
+    "action": {
+        "default_popup": "hello.html",
+        "default_icon": "images/icon/default_icon.png"
+    },
+    "icons": {
+        "16": "images/icon/default_icon.png",
+        "32": "images/icon/default_icon.png",
+        "48": "images/icon/default_icon.png",
+        "128": "images/icon/default_icon.png"
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.youtube.com/*"],
+            "js": ["js/content.js"],
+            "css" : ["css/youtube-override.css"]
+        }
+    ]
+    
+}
