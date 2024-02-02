@@ -3,6 +3,6 @@
 
 ## Features
 * Stops recommending Shorts on your Home / Subscriptions pages.
-* Makes left navigation panel smaller / simpler.
-* Removes right panel (with recommended videos) when on a YouTube video page.
-* Removes ability navigate to another Short when watching a Short.  
+* Makes the left navigation panel smaller / simpler.
+* Removes the right panel (with recommended videos) when on a YouTube video page.
+* Removes ability to navigate to another Short when watching a Short.  
