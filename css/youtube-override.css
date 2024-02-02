@@ -13,3 +13,7 @@ ytd-rich-section-renderer {
 .ytd-shorts.navigation-container {
     display: none !important;
 }
+
+#page-manager #columns #secondary {
+    display: none !important;
+}
