@@ -1,19 +1,24 @@
+/* Use full width for content, since navigation panel is removed / reduced. */
 #content {
     --ytd-persistent-guide-width: 0 !important;
 }
 
+/* Left navigation panel. */
 #guide {
     display: none !important;
 }
 
+/* Recommended shorts containers in 'Home' and 'Subscriptions' pages. */
 ytd-rich-section-renderer {
     display: none !important;
 }
 
+/* Youtube Shorts navigation buttons */
 .ytd-shorts.navigation-container {
     display: none !important;
 }
 
+/* Right panel next to YouTube video*/
 #page-manager #columns #secondary {
     display: none !important;
 }
