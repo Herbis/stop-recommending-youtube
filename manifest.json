@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Stop recommending YouTube",
-    "version": "1.0",
+    "version": "1.0.0",
     "description": "Stops recommended content from showing up on YouTube.",
     "action": {
         "default_popup": "hello.html"
