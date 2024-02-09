@@ -22,3 +22,9 @@ ytd-rich-section-renderer {
 #page-manager #columns #secondary {
     display: none !important;
 }
+
+/** Hide active navigation item in mini-guide, this is to prevent clicking the icon to 
+get new content (for shorts) */
+#content ytd-mini-guide-renderer #items ytd-mini-guide-entry-renderer[is-active] {
+    display: none;
+}
