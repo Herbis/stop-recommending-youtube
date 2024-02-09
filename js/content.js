@@ -3,16 +3,17 @@ const observeUrlChange = () => {
     let oldHref = document.location.href;
     let keyNavigationBlockActive = false;
     const body = document.querySelector("body");
+
     const observer = new MutationObserver(mutations => {
-        if (!initialShortsScrollPrevented && oldHref.includes('shorts')) {
+        let currentUrl = document.location.href;
+        if (!initialShortsScrollPrevented && currentUrl.includes('shorts')) {
             // prevent scrolling on shorts when page is loaded first
             initialShortsScrollPrevented = preventShortsScroll();
             preventKeyNavigation();
+            removeEventListener()
             keyNavigationBlockActive = true;
-            oldHref = document.location.href;
-        } else if (oldHref !== document.location.href) {
-            oldHref = document.location.href;
-            if (document.location.href.includes('shorts')) {
+        } else if (oldHref !== currentUrl) {
+            if (currentUrl.includes('shorts')) {
                 // prevent scrolling on shorts when navigating to a new page
                 preventShortsScroll();
                 preventKeyNavigation();
@@ -25,6 +26,7 @@ const observeUrlChange = () => {
                 }
             }
         }
+        oldHref = currentUrl;
     });
     observer.observe(body, { childList: true, subtree: true });
   };
